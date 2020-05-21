@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 2288949033787194158}
   - component: {fileID: -4069784941448287163}
   m_Layer: 0
-  m_Name: Gate
+  m_Name: Input
   m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +88,7 @@ Transform:
   m_GameObject: {fileID: 3165792995644945823}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.6039642, y: -1.6656747, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 5501523650518320703}
   - {fileID: 4677562444430942849}
@@ -163,8 +163,11 @@ MonoBehaviour:
   inp:
   - {fileID: 2225321997340058289}
   - {fileID: 681737365860301860}
+  inpCheck: 
   outp: {fileID: 7042935642838604397}
   wire: {fileID: 5575885806718128907, guid: fc3bbfe8b44cfb54abd46753450265a9, type: 3}
+  inpGate: []
+  opGate: {fileID: 0}
 --- !u!61 &-4069784941448287163
 BoxCollider2D:
   m_ObjectHideFlags: 0
