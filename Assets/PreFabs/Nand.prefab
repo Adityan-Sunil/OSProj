@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 7447962084212413385}
   m_Layer: 0
   m_Name: Nand
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,8 +163,13 @@ MonoBehaviour:
   inp:
   - {fileID: 1870082887063391959}
   - {fileID: 2463576390346505242}
+  inpCheck: 
   outp: {fileID: 8166487971974889475}
   wire: {fileID: 5575885806718128907, guid: fc3bbfe8b44cfb54abd46753450265a9, type: 3}
+  inpGate: []
+  opGate: {fileID: 0}
+  name: 
+  gate: Nand
 --- !u!61 &7447962084212413385
 BoxCollider2D:
   m_ObjectHideFlags: 0

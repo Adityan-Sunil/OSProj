@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1476018040691426078}
   m_Layer: 0
   m_Name: ANDg
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,8 +103,13 @@ MonoBehaviour:
   inp:
   - {fileID: 7238393620973057636}
   - {fileID: 4535636179770653630}
+  inpCheck: 
   outp: {fileID: 6787773746128888063}
   wire: {fileID: 5575885806718128907, guid: fc3bbfe8b44cfb54abd46753450265a9, type: 3}
+  inpGate: []
+  opGate: {fileID: 0}
+  name: 
+  gate: And
 --- !u!61 &-1476018040691426078
 BoxCollider2D:
   m_ObjectHideFlags: 0

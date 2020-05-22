@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: -1191013994477251031}
   m_Layer: 0
   m_Name: XOR
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,8 +163,13 @@ MonoBehaviour:
   inp:
   - {fileID: 3782448818926506726}
   - {fileID: 5484941419009215640}
+  inpCheck: 
   outp: {fileID: 7039482083313713212}
   wire: {fileID: 5575885806718128907, guid: fc3bbfe8b44cfb54abd46753450265a9, type: 3}
+  inpGate: []
+  opGate: {fileID: 0}
+  name: 
+  gate: Xor
 --- !u!61 &-1191013994477251031
 BoxCollider2D:
   m_ObjectHideFlags: 0

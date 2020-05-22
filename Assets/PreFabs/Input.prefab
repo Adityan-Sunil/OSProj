@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: -4069784941448287163}
   m_Layer: 0
   m_Name: Input
-  m_TagString: Gate
+  m_TagString: Input
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,6 +168,7 @@ MonoBehaviour:
   wire: {fileID: 5575885806718128907, guid: fc3bbfe8b44cfb54abd46753450265a9, type: 3}
   inpGate: []
   opGate: {fileID: 0}
+  output: 0
 --- !u!61 &-4069784941448287163
 BoxCollider2D:
   m_ObjectHideFlags: 0

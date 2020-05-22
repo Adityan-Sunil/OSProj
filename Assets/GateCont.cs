@@ -16,6 +16,9 @@ public class GateCont : MonoBehaviour
     public GameObject[] inpGate;
     public GameObject opGate;
 
+    //public string name;
+    public string gate;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -129,5 +132,18 @@ public class GateCont : MonoBehaviour
                 break;
         }
         Destroy(gameObject);
+    }
+
+    public string GetCode() {
+        Debug.Log("getting code for " + gate + " gate");
+        if (inp.Length == 1) {
+            string ing = inpGate[0].transform.parent.gameObject.GetComponent<GateCont>().name;
+            return gate + "(in=" + ing + ", out=" + name + ");";
+        } else {
+            Debug.Log(inpGate[0].transform.parent.gameObject);
+            string a = inpGate[0].transform.parent.gameObject.GetComponent<GateCont>().name;
+            string b = inpGate[1].transform.parent.gameObject.GetComponent<GateCont>().name;
+            return gate + "(a=" + a + ", b=" + b + ", out=" + name + ");";
+        }
     }
 }
