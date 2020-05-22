@@ -138,11 +138,15 @@ public class GateCont : MonoBehaviour
         Debug.Log("getting code for " + gate + " gate");
         if (inp.Length == 1) {
             string ing = inpGate[0].transform.parent.gameObject.GetComponent<GateCont>().name;
+            if (opGate.transform.parent.name == "Output")
+                return gate + "(in=" + ing + ", out=out);";
             return gate + "(in=" + ing + ", out=" + name + ");";
         } else {
             Debug.Log(inpGate[0].transform.parent.gameObject);
             string a = inpGate[0].transform.parent.gameObject.GetComponent<GateCont>().name;
             string b = inpGate[1].transform.parent.gameObject.GetComponent<GateCont>().name;
+            if (opGate.transform.parent.name == "Output")
+                return gate + "(a=" + a + ", b=" + b + ", out=out);";
             return gate + "(a=" + a + ", b=" + b + ", out=" + name + ");";
         }
     }

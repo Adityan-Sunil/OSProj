@@ -8,10 +8,12 @@ public class CodeGen : MonoBehaviour
 {
     GameObject[] gates;
     GameObject[] inputs;
+    GameObject output;
 
     public void StartGenerating() {
         gates = GameObject.FindGameObjectsWithTag("Gate");
         inputs = GameObject.FindGameObjectsWithTag("Input");
+        output = GameObject.FindGameObjectWithTag("Output");
         Generate();
     }
 
