@@ -1,12 +1,7 @@
 CHIP MyChip {
-	IN in0, in1, in2, in3;
+	IN in0;
 	OUT out;
 
 	PARTS:
-	Or(a=in0, b=in1, out=gate0);
-	And(a=gate0, b=in2, out=gate1);
-	Not(in=in3, out=gate2);
-	Not(in=gate0, out=gate3);
-	Xor(a=gate3, b=gate1, out=gate4);
-	Nand(a=gate2, b=gate4, out=gate5);
+	Or(a=in0, b=in0, out=out);
 }

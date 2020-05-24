@@ -1359,7 +1359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1136f0240e7a8ab43a27d5d29788603c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GatePrefab: {fileID: 1572213974378329930, guid: 2ca0e70d7f8030847937f3f31012b79d,
+  GatePrefab: {fileID: 3487053510084658169, guid: d2368c4ae7f952d4f82cae9e7c950ab2,
     type: 3}
 --- !u!1 &681386007
 GameObject:

@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 462eafc1d74639f458e926ad2575be89, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 472b738e7efd5be48961b302c60d4ea3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,7 +108,6 @@ MonoBehaviour:
   wire: {fileID: 5575885806718128907, guid: fc3bbfe8b44cfb54abd46753450265a9, type: 3}
   inpGate: []
   opGate: {fileID: 0}
-  name: 
   gate: Or
 --- !u!61 &4038531086530888410
 BoxCollider2D:

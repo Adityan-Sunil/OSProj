@@ -1,11 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager.UI;
 using UnityEngine;
 
 public class GateCont : MonoBehaviour
 {
-    public Camera main;
     public bool select;
     public GameObject[] inp ;
     public bool[] inpCheck;
