@@ -43,16 +43,18 @@ public class GateCont : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(2))
         {
-
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, -Vector3.back);
-            if (hit)
+            if(gameObject.name != "Output")
             {
-                if (hit.collider.gameObject == gameObject)
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                RaycastHit2D hit = Physics2D.Raycast(mousePos, -Vector3.back);
+                if (hit)
                 {
-                    deleteGate();
+                    if (hit.collider.gameObject == gameObject)
+                    {
+                        deleteGate();
+                    }
                 }
-            }
+            }   
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -147,5 +149,9 @@ public class GateCont : MonoBehaviour
                 return gate + "(a=" + a + ", b=" + b + ", out=out);";
             return gate + "(a=" + a + ", b=" + b + ", out=" + name + ");";
         }
+    }
+    public void ResetPress()
+    {
+        Destroy(gameObject);
     }
 }

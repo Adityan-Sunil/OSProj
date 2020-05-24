@@ -18,7 +18,7 @@ public class CodeGen : MonoBehaviour
     }
 
     void Generate() {
-        StreamWriter writer = new StreamWriter("code.hdl");
+        StreamWriter writer = new StreamWriter("MyChip.hdl");
         writer.WriteLine("CHIP MyChip {");
         writer.Write("\tIN");
         for (int i = 0; i < inputs.Length; i++) {
